@@ -1,0 +1,46 @@
+---
+title: 'Best Practices'
+description: 'Important tips to keep your Plays sending without disruption.'
+---
+
+<Tip>
+If your plan includes Fully-Managed Email Infrastructure, we'll handle all of this for you.
+</Tip>
+
+
+## Sales Domains
+**Never send cold email from your primary domain**. Always use separate sales domains to maintain a separate reputation and mitigate risk to your business-critical emails.
+
+We recommend starting with **3 sales domains**. If your company is company.com, for example, you could register:
+- getcompany.com
+- trycompany.com
+- withcompany.com
+
+## DNS Records
+<Tip>
+If you are using our fully-managed email infrastructure, we will take care of this for you.
+</Tip>
+When registering your sales domains, it is critical to set up your DNS records to land in the inbox.
+
+Please be sure you have configured properly your:
+- [SPF Record](https://support.google.com/a/answer/33786?hl=en&ref_topic=9061731&sjid=8397682044347921886-NC)
+- [DKIM Record](https://support.google.com/a/answer/174124?hl=en&ref_topic=9061731&sjid=8397682044347921886-NC)
+- [DMARC Record](https://support.google.com/a/answer/2466580?hl=en)
+
+
+## Mailboxes Per Domain
+We recommend no more than **5 mailboxes per domain.**
+
+## Emails Per Mailbox
+We recommend sending no more than **25 emails per day per mailbox**
+
+For Mailboxes connected recently, the limit will automatically start at 10 emails per day per mailbox, and will automatically ramp from there.
+
+
+## Email Warmup
+<Tip>
+If you are using our fully-managed email infrastructure, we will take care of this for you.
+</Tip>
+It is critical to keep all Mailboxes connected to an Email Warmup service for the entire duration of your outreach.
+
+If you are using your own mailboxes, we'd recommend services like [Warmup Inbox](https://www.warmupinbox.com/) or [Smartlead](https://app.smartlead.ai/).
