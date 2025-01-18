@@ -10,3 +10,37 @@ All API endpoints are authenticated using Bearer tokens generated in your Playma
 ```json
 Authorization: Bearer {token}
 ```
+
+## Rate Limits
+
+To ensure optimal performance and availability, our API enforces rate limits on requests. These limits are designed to provide a consistent experience for all users.
+
+<CardGroup cols="2">
+  <Card title="POST Endpoints" icon="upload">
+    Up to 25 requests per 60 seconds
+  </Card>
+
+  <Card title="GET Endpoints" icon="download">
+    Up to 5 requests per 60 seconds.
+  </Card>
+</CardGroup>
+
+### Handling Rate Limits
+
+If you exceed the rate limit, the API responds with a 429 Too Many Requests status code. The response includes a Retry-After header indicating the time to wait before retrying.
+
+```json
+{
+  "code":"ERROR_CODE_TOO_MANY_REQUESTS",
+  "message":"Rate limit exceeded",
+  "status":"error"
+  }
+```
+
+### Best Practices to Avoid Throttling
+
+* Implement exponential backoff for retries.
+
+* Use paginated requests when fetching large datasets.
+
+* Cache responses where appropriate to reduce redundant requests.
