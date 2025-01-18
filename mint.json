@@ -83,10 +83,26 @@
   ]
 },
     {
-  "group": "Leads",
+  "group": "Accounts",
   "pages": [
-    "api-reference/endpoint/account",
-    "api-reference/endpoint/contact"
+    "api-reference/endpoint/list-accounts",
+    "api-reference/endpoint/get-account",
+    "api-reference/endpoint/post-account"
+  ]
+},
+    {
+  "group": "Contacts",
+  "pages": [
+    "api-reference/endpoint/list-contacts",
+    "api-reference/endpoint/get-contact",
+    "api-reference/endpoint/post-contact"
+  ]
+},
+    {
+  "group": "Emails",
+  "pages": [
+    "api-reference/endpoint/list-emails",
+    "api-reference/endpoint/get-email"
   ]
 },
 {
