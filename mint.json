@@ -108,7 +108,7 @@
 {
   "group": "Plays",
   "pages": [
-    "api-reference/endpoint/plays"
+    "api-reference/endpoint/list-plays"
   ]
 },
     {
