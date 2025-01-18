@@ -11,6 +11,7 @@ All API endpoints are authenticated using Bearer tokens generated in your Playma
 Authorization: Bearer {token}
 ```
 
+
 ## Rate Limits
 
 To ensure optimal performance and availability, our API enforces rate limits on requests. These limits are designed to provide a consistent experience for all users.
@@ -25,6 +26,7 @@ To ensure optimal performance and availability, our API enforces rate limits on 
   </Card>
 </CardGroup>
 
+
 ### Handling Rate Limits
 
 If you exceed the rate limit, the API responds with a 429 Too Many Requests status code. The response includes a Retry-After header indicating the time to wait before retrying.
@@ -36,6 +38,7 @@ If you exceed the rate limit, the API responds with a 429 Too Many Requests stat
   "status":"error"
   }
 ```
+
 
 ### Best Practices to Avoid Throttling
 
