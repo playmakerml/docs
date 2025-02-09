@@ -112,6 +112,15 @@
   ]
 },
     {
+  "group": "Blocklist",
+  "pages": [
+    "api-reference/endpoint/blocklist-post-account",
+    "api-reference/endpoint/blocklist-delete-account",
+    "api-reference/endpoint/blocklist-post-contact",
+    "api-reference/endpoint/blocklist-delete-contact"
+  ]
+},
+    {
       "group": "Settings",
       "pages": [
         "settings/blocklists",
